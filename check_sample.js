@@ -15,4 +15,4 @@ console.log("重同步次数 =", parsed.resyncs);
 console.log("按序交付的分片 =", JSON.stringify(group.delivered));
 console.log("超时丢弃的分片 =", JSON.stringify(group.dropped));
 console.log("仍在等待的分片 =", JSON.stringify(group.pending));
-console.log("校验失败的错误码 =", spec.resync_code);
+console.log("校验失败的错误码 =", (parsed.errors[0] && parsed.errors[0].code) || spec.resync_code);
