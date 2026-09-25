@@ -1,0 +1,13 @@
+{
+  "resync_code": "E_BAD_CHECKSUM",
+  "header": "STX",
+  "frame_size": 6,
+  "timeout_ticks": 2,
+  "bytes": "xxSTX12abSTX34cdSTX56STX78ef",
+  "fragments": [
+    {"id": "f0", "seq": 1, "arrived": 0},
+    {"id": "f1", "seq": 0, "arrived": 1},
+    {"id": "f2", "seq": 2, "arrived": 1},
+    {"id": "f3", "seq": 3, "arrived": 5}
+  ]
+}
